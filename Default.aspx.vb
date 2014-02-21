@@ -35,7 +35,7 @@ Partial Class _Default
         netPay = postTaxPay - atax
 
         'display net pay
-        netpayLabel.Text = netPay
+        netpayLabel.Text = "$" & netPay
 
     End Sub
 
@@ -46,5 +46,17 @@ Partial Class _Default
         ptaxTextBox.Text = " "
         ataxTextBox.Text = " "
         netpayLabel.Text = " "
+    End Sub
+
+    Protected Sub hourlywageTextBox_TextChanged(sender As Object, e As EventArgs) Handles hourlywageTextBox.TextChanged
+
+    End Sub
+
+    Protected Sub ptaxTextBox_TextChanged(sender As Object, e As EventArgs) Handles ptaxTextBox.TextChanged
+
+    End Sub
+
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
     End Sub
 End Class
